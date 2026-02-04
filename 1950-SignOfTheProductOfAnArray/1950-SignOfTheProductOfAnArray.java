@@ -1,0 +1,11 @@
+// Last updated: 2/4/2026, 9:06:20 PM
+class Solution {
+    public int arraySign(int[] nums) {
+        int neg=0;
+        for(int x:nums){
+            if(x==0) return 0;
+            if(x<0) neg++;
+        }
+        return neg%2==0?1:-1;
+    }
+}
